@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    color: white;
+    background: grey url('/img/coffee-photo.jpg') center/cover no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    font-size: 2em;
+    height: 100vh;
+    margin-left: auto;
+    width: 40%;
+    text-align: center;
+    background-color: rgba($color: #54361C, $alpha: .8);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1000px) {
+        font-size: 1.5em;
+        width: 100%;
+        background-color: transparent;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 1em;
+        width: 100%;
+        background-color: transparent;
+    }
+}
+
+h1 {
+    margin: 0;
+}
+
+p {
+    font-size: .9em;
+    margin: 2em 0;
+}
+.button {
+    background-color: #C20100;
+    padding: 1em;
+    border-radius: .2em;
+    width: 80%;
+    margin: 1em auto;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
